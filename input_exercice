@@ -1,0 +1,6 @@
+prenom = input("entrer un prénom:")
+ville_de_naissance = input ("entrer votre ville de naissance:")
+age = input ("entrer un âge:")
+print(prenom)
+print(ville_de_naissance)
+print(age)

@@ -1,6 +1,9 @@
-prenom = input("entrer un prénom:")
+# Demander le prénom, la ville de naissance et l'âge de la personne qui utilise le script
+# Afficher ces trois informations
+
+prenom = input("entrer votre prénom:")
 ville_de_naissance = input ("entrer votre ville de naissance:")
-age = input ("entrer un âge:")
+age = input ("entrer votre âge:")
 print(prenom)
 print(ville_de_naissance)
 print(age)

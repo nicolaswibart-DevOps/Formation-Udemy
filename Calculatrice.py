@@ -1,14 +1,18 @@
 #Conception d'une calculatrice
 
-#Demander à l'utilisateur un premier nombre
-#Demander à l'utilisateur un deuxième nombre
-#Afficher le message "Le résultat de l'addition du nombre a avec le nombre b est égal à a+b"
+# On déclare deux variables
+a = b = ""
 
+# Tant que a et b ne sont pas des nombres, on boucle
+while not (a.isdigit() and b.isdigit()):
+    
+    # On demande deux nombres à l'utilisateur
+    a = input("Entrez un premier nombre : ")
+    b = input("Entrez un deuxième nombre : ")
+    
+    # On affiche une phrase si les nombres entrés ne sont pas valides.
+    if not (a.isdigit() and b.isdigit()):
+        print("Veuillez entrer deux nombres valides")
 
-a = input("veuiller entrer un premier nombre:")
-b = input("veuiller entrer un deuxieme nombre:")
-
-
-resultat = f"Le résultat de l'addition du nombre {a} avec le nombre {b} est égal à {int(a) + int(b)}"
-
-print(resultat)
+# On affiche le résultat de l'addition
+print(f"Le résultat de l'addition de {a} avec {b} est égal à {int(a) + int(b)}")
